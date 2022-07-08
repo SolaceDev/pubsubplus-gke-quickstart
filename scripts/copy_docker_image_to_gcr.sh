@@ -94,6 +94,7 @@ if ! docker pull ${PUBSUBPLUS_IMAGE_URL} ; then
       echo "Successfully downloaded ${SolOS_LOAD}"
     fi
     ## Load the image tarball
+    echo "image to load ${SolOS_LOAD}"
     docker load -i ${SolOS_LOAD}
     rm solos.info ${SolOS_LOAD} # cleanup local files
   fi
